@@ -17,6 +17,7 @@ app.use('/api/painters', require('./routes/painters'));
 app.use('/api/bookings', require('./routes/bookings'));
 app.use('/api/consultancy', require('./routes/consultancy'));
 app.use('/api/ai-preview', require('./routes/aiPreview'));
+app.use('/api/payment', require('./routes/payment'));
 
 // MongoDB Connection
 mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/painter-connect')
